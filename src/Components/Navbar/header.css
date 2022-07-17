@@ -1,0 +1,195 @@
+/*Desktop View*/
+.header {
+  display: flex;
+  background: linear-gradient(127deg, black, transparent);
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
+  height: 80px;
+}
+.logo-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  width: 75px;
+  height: 70px;
+}
+.logonxt {
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+}
+.nav-options {
+  padding-left: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 50px;
+  list-style-type: none;
+}
+.mobile-option {
+  display: none;
+}
+.option {
+  font-family: "system-ui";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #ffffff;
+  cursor: pointer;
+}
+.option :hover {
+  color: white;
+}
+.signin-up {
+  display: flex;
+  padding: 0px 5px;
+  list-style-type: none;
+}
+.sign-in {
+  padding-right: 50px;
+  align-self: center;
+}
+.sign-in :hover {
+  color: white;
+}
+.exclude {
+  display: none;
+}
+.btn-Wrapper {
+  display: flex;
+}
+.book-btn {
+  color: white;
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 530px;
+  height: 64px;
+  background: #f2f5f9;
+  border-radius: 10px;
+  border: solid #ffffff;
+  box-shadow: 8px 24px 64px rgba(0, 0, 0, 0.1);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.cancel-btn {
+  color: white;
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 530px;
+  height: 64px;
+  background: #f2f5f9;
+  border-radius: 10px;
+  border: solid #ffffff;
+  box-shadow: 8px 24px 64px rgba(0, 0, 0, 0.1);
+  margin-left: 10px;
+}
+.btn-text {
+  font-family: "system-ui";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #fb732a;
+  cursor: pointer;
+}
+.btn-canceltext {
+  font-family: "system-ui";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  font-feature-settings: "salt" on, "liga" off;
+  color: red;
+  cursor: pointer;
+}
+.mobile-menu {
+  display: none;
+}
+@media (max-width: 768px) {
+  /*Mobile View */
+  .header {
+  }
+  .logo {
+    width: 45px;
+    height: 45px;
+  }
+  .nav-options {
+    display: flex;
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    flex-direction: column;
+    list-style-type: none;
+    grid-gap: 0px;
+  }
+  .nav-options.active {
+    background: #9899d1;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    align-content: center;
+    padding-left: 0px;
+  }
+  .logonxt {
+    width: 30px;
+    height: 30px;
+    margin: 0px 10px;
+  }
+  .btn-Wrapper {
+    display: none;
+  }
+  .menu-icon {
+    width: 45px;
+    height: 45px;
+  }
+  .option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vw;
+    padding: 30px 0px;
+    background: linear-gradient(127.18deg, #3846fe 0.93%, #6c76fe 98.36%);
+  }
+  .sign-up {
+    background: rgb(222, 9, 241);
+    border-radius: 3px;
+    color: white;
+    padding: 20px 0px;
+    width: 80%;
+    align-self: center;
+    border-radius: 3px;
+  }
+
+  .signin-up {
+    display: none;
+  }
+}
+.mobile-menu {
+  display: block;
+}
