@@ -141,7 +141,7 @@ npx create-react-app --food_coup_mania
 ---
 ## Commands required
 
-### For Running The App at Devlopment Enviornment  : npm run start
+### For Running The App at Devlopment Enviornment  : npm run dev
 
 ## Topics :
 
