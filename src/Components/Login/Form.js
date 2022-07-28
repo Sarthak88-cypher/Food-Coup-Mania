@@ -80,11 +80,11 @@ const Login = (props) => {
       <h1 className={classes.heading}> Sign In </h1>
       <TextField
         className={classes.txtInput}
-        id="standard-password-input"
+        id="standard-username-input"
         variant="outlined"
         label="Username"
         type="text"
-        autoComplete="current-password"
+        autoComplete="current-username"
         value={Username}
         onChange={(e) => setUsername(e.target.value)}
       />
